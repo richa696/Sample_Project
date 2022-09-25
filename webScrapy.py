@@ -42,11 +42,10 @@ def getWebTableData():
     API_ENDPOINT = "http://localhost:8000/api/saveorupdate/"
     payload=json.dumps({"data":res})
     headers = {"Content-Type": "application/json"}
-    # # sending post request and saving response as response object
-    r = requests.post(url = API_ENDPOINT, data = payload, headers=headers)
-    print(r)
+    # sending post request and saving response as response object
+    requests.post(url = API_ENDPOINT, data = payload, headers=headers)
     
-getWebTableData()
+# getWebTableData()
     
 schedule.every(4).seconds.do(getWebTableData)
 while 1:
