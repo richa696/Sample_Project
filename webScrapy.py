@@ -48,10 +48,10 @@ def getWebTableData():
     
 getWebTableData()
     
-# schedule.every(4).seconds.do(getWebTableData)
-# while 1:
-#     schedule.run_pending()
-#     time.sleep(1)
+schedule.every(4).seconds.do(getWebTableData)
+while 1:
+    schedule.run_pending()
+    time.sleep(1)
     
 
     
