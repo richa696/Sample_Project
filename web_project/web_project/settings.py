@@ -90,9 +90,9 @@ WSGI_APPLICATION = 'web_project.wsgi.application'
 DATABASES = {
     'default': {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'cryptocurrency',# RCZ-GCP
+    'NAME': 'sample',
     'USER': 'root',
-    'PASSWORD': '8127688120',
+    'PASSWORD': 'root',
     'HOST': 'localhost',
     'PORT': '3306',
 },
