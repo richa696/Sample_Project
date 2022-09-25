@@ -1,4 +1,3 @@
-from asyncio.log import logger
 import json
 from rest_framework.views import APIView
 import logging
